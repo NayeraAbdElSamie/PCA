@@ -1,0 +1,31 @@
+a) number of columns = 4
+   
+b) all of the attributes are numeric (integers).
+
+c) distance between x1 and x3 = root((10-30)^2 + (60-50)^2 + (10-30)^2 + (90-40)^2) = 58.31
+   
+d) length of x2 = ||x2|| = root((20)^2 + (50)^2 + (40)^2 + (70)^2) = 97
+
+e) ||x2|| = 97
+   ||x4|| = root((20)^2 + (50)^2 + (20)^2 + (60)^2) = 83.1
+   x2.x4 = (20*20) + (50*50) + (40*20) + (70*60) = 7900
+   cos(angle) = 7900/(97)(83.1) = 0.98
+   therefore angle = 11.46
+   
+f) Yes, we need attribute scaling due to different ranges of attributes.
+
+g) Using min-max scaling:
+   scaling function = x-xmin/xmax-xmin
+   scaled data matrix:  1  0     1   0       1
+                        2  0.5   0   1       0.75
+                        3  1     0   0.667   0.375
+                        4  0.5   0   0.333   0.625
+                        5  0     1   0.667   0
+                        
+h) c) distance between x1 and x3 = root((0-1)^2 + (1-0)^2 + (0-0.667)^2 + (1-0.375)^2) = 1.61
+   d) length of x2 = ||x2|| = root((0.5)^2 + (0)^2 + (1)^2 + (0.75)^2) = 1.35
+   e) ||x2|| = 1.35
+      ||x4|| = root((0.5)^2 + (0)^2 + (0.333)^2 + (0.625)^2) = 0.87
+      x2.x4 = (0.5*0.5) + (0*0) + (1*0.333) + (0.75*0.625) = 1.05175
+      cos(angle) = 1.05175/(1.35)(0.87) = 0.895
+      therefore angle = 26.43
